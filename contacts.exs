@@ -9,13 +9,13 @@ defmodule Book do
         name: "Théo",
         id: "exybore",
         age: 17,
-        teams: ["Writters", "Developers"]
+        teams: ["Writers", "Developers"]
       },
       %Contact{
         name: "Gildas",
         id: "gildasgh",
         age: 19,
-        teams: ["Writters"]
+        teams: ["Writers"]
       },
       %Contact{
         name: "Noéwen",
@@ -32,7 +32,7 @@ defmodule Book do
     end
 
     total_age = Enum.reduce contacts, 0, fn x, acc -> x.age + acc end
-    IO.puts "Âge moyen des contacts : #{total_age / length(contacts)}"
+    IO.puts "Medium contacts' age : #{total_age / length(contacts)}"
   end
 end
 
