@@ -6,8 +6,12 @@ defmodule Game do
       |> String.trim_trailing
       |> String.to_integer
     :rand.uniform() * 100
-      |> Float.floor
+      |> trunc
       |> play_turn(trials)
+  end
+
+  def play_turn(number, 0) do
+    IO.puts "Vous n'avez plus d'essais restants! Le nombre était #{number}."
   end
 
   def play_turn(number, trials_left) do
@@ -23,11 +27,7 @@ defmodule Game do
       if prompt < number, do: IO.puts "Non! C'est plus!"
 
       trials_left = trials_left - 1
-      if trials_left === 0 do
-        IO.puts "Vous n'avez plus d'essais restants..."
-      else
-        play_turn(number, trials_left)
-      end
+      play_turn(number, trials_left)
     end
   end
 end
