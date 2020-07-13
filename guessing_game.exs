@@ -15,11 +15,11 @@ defmodule Game do
   end
 
   def play_turn(number, trials_left) do
-    prompt = 
+    prompt =
       IO.gets("Donne un nombre : ")
       |> String.trim_trailing
       |> String.to_integer
-      
+
     if prompt == number do
       IO.puts "Bravo, c'est gagné!"
     else
