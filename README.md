@@ -4,6 +4,7 @@ This repository is an archive of all the little scripts I made in order to get f
 
 - [❓ Guessing game](#-guessing-game)
 - [📔 Contacts directory](#-contacts-directory)
+- [⛅ Weather](#-weather)
 
 ## ❓ Guessing game
 
@@ -28,3 +29,15 @@ Goals :
 - Write simple structs
 
 [View the script](./contacts.exs)
+
+## ⛅ Weather
+
+A little library that fetches the weather for a specific location thanks to the OpenWeatherMap API.
+
+Goals :
+
+- Interact with native Erlang modules
+- Make HTTP requests and parse JSON out of them
+- Start building Mix projects with unit testing
+
+[View the project](./weather)
