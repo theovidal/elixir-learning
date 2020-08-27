@@ -1,5 +1,7 @@
 # ⚗ Elixir learning projects
 
+[![Run on Repl.it](https://repl.it/badge/github/theovidal/elixir-learning)](https://repl.it/github/theovidal/elixir-learning)
+
 This repository is an archive of all the little scripts I made in order to get familiar with the Elixir programming language.
 
 - [❓ Guessing game](#-guessing-game)
